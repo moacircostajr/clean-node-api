@@ -1,4 +1,3 @@
-# GIT
 /*configurações*/
 $ git config --list // lista configurações do git na maquina
 
@@ -57,7 +56,7 @@ test = teste unitário
 $ git add .
 $ git commit --amend --no-edit // adiciona as alterações ao commit anterior usando a descrição do commit anterior
 
-# NODEJS (versões em https://node.green/)
+// NODEJS (versões em https://node.green/)
 /*criação do projeto*/
 $ git init
 $ npm init -y
@@ -94,3 +93,6 @@ $ npm install -D lint-staged // atua em conjunto com o husky. permite a execuç�
     "git add" // caso não encontre erros, adiciona os arquivos para serem commitados
   ]
 }
+
+$ npm install -D jest @types/jest ts-jest
+$ jest --init
