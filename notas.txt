@@ -54,8 +54,10 @@ test = teste unitário
 
 [optional footer(s)]
 
+
 # NODEJS
 /*criação do projeto*/
 $ git init
 $ npm init -y
+$ npm install -D git-commit-msg-linter
 
