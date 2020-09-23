@@ -1,0 +1,61 @@
+# GIT
+/*configurações*/
+$ git config --list // lista configurações do git na maquina
+
+/*níveis de configuração do git*/
+$ git config --system // configuração do git na maquina toda
+$ git config --global // configurações do usuario para qualquer projeto
+$ git config --local // configurações do git em um projeto específico
+
+/*alteração das configurações do git*/
+$ git config --global --edit // abre com o editor padrão de linha de comando
+ou
+$ git config --global core.editor code --wait // abre com o editor escolhido
+
+/// ~/.gitconfig ///
+[user]
+	email = moacircostajr@gmail.com
+	name = Moacir Costa
+[core]
+	editor = code --wait
+[alias]
+	s = !git status -s
+	c = !git add --all && git commit -m
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+
+'%cn' = nome da pessoa que fez o commit
+'%cr' = data relativa do commit
+'%H' = hash do commit
+'%h' = hash reduzida do commit
+'%d' = branch
+'%s' = mensagem do commit
+%C(blue) = tudo que vier depois fica na cor indicada
+
+/*commit padrão*/
+// tudo minúsculo, exceto nome de classes
+// sem pontuação
+// verbos no presente
+(https://www.conventionalcommits.org/en/v1.0.0/)
+TYPES:
+fix = correção de erro
+feat = feature nova
+build
+chore = configuração do projeto
+ci
+docs = mudança na documentação
+style
+refactor = refatoração do codigo
+perf
+test = teste unitário
+
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+
+# NODEJS
+/*criação do projeto*/
+$ git init
+$ npm init -y
+
