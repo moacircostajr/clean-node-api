@@ -78,3 +78,19 @@ $ npm install --save-dev eslint@7 eslint-plugin-standard@4 eslint-plugin-promise
   }
 }
 
+$ npm install -D husky // permite a execução de comandos antes de fazer um commit
+$ npm install -D lint-staged // atua em conjunto com o husky. permite a execução de scripts somente nos arquivos que estão na stage area (arquivos que irão para o próximo commit)
+
+/// .huskyrc.json ///
+{
+  "hooks": {
+    "pre-commit": "lint-staged" // faz a verificação dos padrões do projeto em todos os arquivos que serão comitados
+  }
+}
+/// .lintstagedrc.json ///
+{
+  "*.ts": [
+    "eslint 'src/**' --fix", // faz a checagem de padrões em todos os arquivos do tipo ts na pasta src. caso encontre erros, tenta corrigir
+    "git add" // caso não encontre erros, adiciona os arquivos para serem commitados
+  ]
+}
