@@ -90,9 +90,17 @@ $ npm install -D lint-staged // atua em conjunto com o husky. permite a execuç�
 {
   "*.ts": [
     "eslint 'src/**' --fix", // faz a checagem de padrões em todos os arquivos do tipo ts na pasta src. caso encontre erros, tenta corrigir
+    "npm run test:staged", // executa o script de teste escript no package.json
     "git add" // caso não encontre erros, adiciona os arquivos para serem commitados
   ]
 }
 
 $ npm install -D jest @types/jest ts-jest
 $ jest --init
+
+/// src/controller.spec.ts /// (teste do jest)
+describe('', () => {
+  test('', () => {
+    expect(1).toBe(1)
+  })
+})
