@@ -1,0 +1,9 @@
+{
+  "extends": "standard-with-typescript", // estende as configurações padrão do eslint pro typescript
+  "parserOptions": {
+    "project": "./tsconfig.json" // informa ao eslint que serão usadas as configurações do typescript no projeto
+  },
+  "rules": {
+    "@typescript-eslint/space-before-function-paren": "off"
+  }
+}

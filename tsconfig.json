@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // indica a pasta para o qual irão os arquivos transpilados
+    "module": "commonjs", // indica qual o ecossistema a ser usado no node
+    "target": "es2019", // indica a versão do javascript para o qual os arquivos ts serão transpilados
+    "esModuleInterop": true, // permite o uso de import ao invés de require
+    "allowJs": true, // permite a inclusão no git de arquivos de configuração no formato js ao invés de json
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
