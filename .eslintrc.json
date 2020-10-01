@@ -4,10 +4,15 @@
     "project": "./tsconfig.json" // informa ao eslint que serão usadas as configurações do typescript no projeto
   },
   "rules": {
-    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/comma-spacing": "off", // corrige um bug na biblioteca do eslint
+    "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/consistent-type-definitions": "off"
+    /*
+    "@typescript-eslint/restrict-template-expressions": "off"
+    "@typescript-eslint/return-await": "off" // Promise.resolve(...)
+    "@typescript-eslint/space-before-function-paren": "off",
     "@typescript-eslint/no-unused-vars": "off"
+  */
   }
 }
