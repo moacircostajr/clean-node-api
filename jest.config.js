@@ -20,7 +20,13 @@ module.exports = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // Informa onde buscar os arquivos para fazer cobertura de teste
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '<rootDir>/src/main/**',
+    '!<rootDir>/src/**/*-protocols.ts', // não faz sentido testar interfaces
+    '!**/protocols/**',
+    '!**/test/**'
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
