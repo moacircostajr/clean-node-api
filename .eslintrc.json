@@ -8,10 +8,10 @@
     "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/space-before-function-paren": "off",
-    "@typescript-eslint/consistent-type-definitions": "off"
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/return-await": "off" // Promise.resolve(...)
     /*
     "@typescript-eslint/restrict-template-expressions": "off"
-    "@typescript-eslint/return-await": "off" // Promise.resolve(...)
     "@typescript-eslint/no-unused-vars": "off"
   */
   }
