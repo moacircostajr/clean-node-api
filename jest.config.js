@@ -181,7 +181,7 @@ module.exports = {
   // aplica o ts-jest a todos os arquivos que terminem com .ts para converter os arquivos typescript em arquivos javascript antes de executar os testes
   transform: {
     '.+\\.ts$': 'ts-jest'
-  }
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
@@ -200,4 +200,5 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  preset: '@shelf/jest-mongodb'
 }
