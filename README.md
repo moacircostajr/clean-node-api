@@ -3,7 +3,6 @@
 
 API Node desenvolvida com o propósito de servir a um sistema de enquetes online.
 
-# clean-node-api
 Projeto desenvolvido em Typescript com a biblioteca React, consistindo num projeto de estudo do [curso](https://www.udemy.com/course/tdd-com-mango/) de NodeJs, Typescript, TDD, Clean Architecture e SOLID, com o professor Rodrigo Manguinho.
 
 ### Introdução
