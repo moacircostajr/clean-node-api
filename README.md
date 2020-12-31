@@ -15,19 +15,19 @@ A tecnologia de desenvolvimento dessa api pode ser instalada através do comando
 
 ## Instalação
 
-Após o download deste projeto, dentro de sua pasta principal deve ser executado o comando `yarn`, para que seja feito o download e a instalação das dependências do projeto.
+Após o download deste projeto, dentro de sua pasta principal deve ser executado o comando `npm install`, para que seja feito o download e a instalação das dependências do projeto.
 
 Após a instalação das dependências, basta executar os passos informados nas notas a seguir.
 
 ## Servidor de desenvolvimento
 
-Execute `yarn start`, no terminal de comando, para iniciar o servidor de desenvolvimento. Acesse o endereço web `http://localhost:3000/`. A aplicação será atualizada automaticamente caso seja alterado o código fonte.
+Execute `npm start`, no terminal de comando, para iniciar o servidor de desenvolvimento. Acesse o endereço web `http://localhost:3000/`. A aplicação será atualizada automaticamente caso seja alterado o código fonte.
 
 Para parar a execução do servidor de desenvolvimento, pressione `Ctrl + C`, no terminal de comando.
 
 ## Compilação
 
-Execute `yarn build` para compilar o projeto. O projeto compilado poderá ser encontrado no diretório build/.
+Execute `npm build` para compilar o projeto. O projeto compilado poderá ser encontrado no diretório build/.
 
 ## Ajuda
 
