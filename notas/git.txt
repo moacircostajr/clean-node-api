@@ -1,0 +1,50 @@
+$ git config --list
+$ git config --edit // altera as configurações do git
+$ git config --global core.editor code // configura o visual studio code como editor das configurações do git
+$ git config --system --edit // edita configuração do git para a maquina toda
+$ git config --global --edit // edita configuração do git para o usuario
+$ git config --local --edit // edita configuração do git para um projeto em especifico
+$ git commit --amend --no-edit
+
+
+### config ###
+[core]
+  ...
+  editor = code --wait
+
+
+/* atalhos para o git */
+### .gitconfig ###
+[user]
+	email = moacircostajr@gmail.com
+	name = Moacir Costa
+[alias]
+  s = !git status
+	c = !git add --all && git commit -m
+	l = !git log --pretty=format:'%C(green)%cn %C(blue)%cr %C(yellow)%h %C(white)-> %s'
+
+
+/* git message linter */
+$ yarn add -D git-commit-message-linter
+
+/* HUSKY - executa comandos antes ou depois de um commit */
+1. instalar:
+$ yarn add -D husky lint-staged
+
+2. criar o arquivo .lintstagedrc.json
+### .lintstagedrc.json ###
+{
+  "*.ts": [
+    "eslint 'src/**' --fix",
+    "npm run test:staged"
+  ]
+}
+
+3. criar arquivo de configuração do husky
+### huskyrc.json ###
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm run test:ci"
+  }
+}

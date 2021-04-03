@@ -1,0 +1,12 @@
+$ yarn add -D typescript @types/node
+
+### tsconfig.json ###
+{
+  "compilerOptions": {
+    "outDir": "./dist", // pasta qie conterá o codigo javascript transpilado
+    "module": "commonjs", // transpila o typescript para javascript na versão que os browsers entendem (require, etc.)
+    "target": "es2019", // gera o javascript no padrão de es2019
+    "esModuleInterop":true, // converte o import em require
+    "allowJs": true // permite incluir no dist arquivos de configuração em javascript
+  }
+}

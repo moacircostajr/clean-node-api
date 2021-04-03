@@ -1,0 +1,35 @@
+https://standardjs.com/
+
+1. instalar
+https://www.npmjs.com/package/eslint-config-standard-with-typescript
+$ yarn add -D eslint@7 eslint-plugin-promise@4 eslint-plugin-import@2 eslint-plugin-node@11 @typescript-eslint/eslint-plugin@4 eslint-config-standard-with-typescript
+
+2. desabilitar standardjs:
+chenxsan.vscode-standardjs
+
+3. criar o arquivo de configuração do linter
+### .eslintrc.json ###
+{
+  "extends": "standard-with-typescript", // estende as configurações padrão do eslint pro typescript
+  "parserOptions": {
+    "project": "./tsconfig.json" // informa ao eslint que serão usadas as configurações do typescript no projeto
+  },
+  "rules": {
+    "@typescript-eslint/comma-spacing": "off", // corrige um bug na biblioteca do eslint
+    "@typescript-eslint/method-signature-style": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/return-await": "off" // Promise.resolve(...)
+    /*
+    "@typescript-eslint/restrict-template-expressions": "off"
+    "@typescript-eslint/no-unused-vars": "off"
+  */
+  }
+}
+
+4. criar o arquivo de configuração p/ o linter ignorar o que for indicado
+### .eslintignore ###
+node_modules
+dist
+coverage
