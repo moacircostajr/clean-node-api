@@ -25,7 +25,7 @@ $ git commit --amend --no-edit
 
 
 /* git message linter */
-$ yarn add -D git-commit-message-linter
+$ yarn add -D git-commit-msg-linter
 
 /* HUSKY - executa comandos antes ou depois de um commit */
 1. instalar:
